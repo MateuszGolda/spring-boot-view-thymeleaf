@@ -15,10 +15,6 @@ public class CheeseController {
 
     @RequestMapping(value = "")
     public String index(Model model) {
-//        cheeses.add("cheddar");
-//        cheeses.add("parmesan");
-//        cheeses.add("gouda");
-
         model.addAttribute("cheeses", cheeses);
         model.addAttribute("title", "My Cheeses");
 
